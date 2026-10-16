@@ -45,10 +45,10 @@
   },
   "devDependencies": {
     "@types/better-sqlite3": "7.6.13",
-    "@types/node": "catalog:",
-    "@vitest/coverage-v8": "catalog:",
+    "@types/node": "24.13.3",
+    "@vitest/coverage-v8": "4.1.10",
     "better-sqlite3": "12.11.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
   }
 }

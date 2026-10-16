@@ -1,0 +1,22 @@
+{
+  "name": "@protocord/workspace",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.13.1",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "pnpm -r --workspace-concurrency=1 run build",
+    "lint": "pnpm -r --workspace-concurrency=1 run lint",
+    "typecheck": "pnpm -r --workspace-concurrency=1 run typecheck",
+    "test": "pnpm -r --workspace-concurrency=1 run test",
+    "pack:check": "pnpm -r --workspace-concurrency=1 run pack:check",
+    "check": "pnpm build && pnpm lint && pnpm typecheck && pnpm test && pnpm pack:check"
+  },
+  "devDependencies": {
+    "eslint": "10.7.0",
+    "typescript-eslint": "8.64.0"
+  }
+}
