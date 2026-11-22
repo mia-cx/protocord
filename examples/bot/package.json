@@ -1,0 +1,24 @@
+{
+  "name": "@protocord/example-bot",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint src test --max-warnings=0",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "pnpm --filter '@protocord/example-bot...' build && vitest run",
+    "start": "node --env-file-if-exists=.env dist/index.js"
+  },
+  "dependencies": {
+    "@protocord/permissions": "workspace:*",
+    "@protocord/settings": "workspace:*",
+    "discord.js": "14.27.0",
+    "protocord": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
+  }
+}
